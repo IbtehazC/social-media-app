@@ -1,0 +1,12 @@
+F:\Creative Stuffs xD\WebApps\social-media-app\Domain\bin\Debug\net6.0\Domain.deps.json
+F:\Creative Stuffs xD\WebApps\social-media-app\Domain\bin\Debug\net6.0\Domain.dll
+F:\Creative Stuffs xD\WebApps\social-media-app\Domain\bin\Debug\net6.0\Domain.pdb
+F:\Creative Stuffs xD\WebApps\social-media-app\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+F:\Creative Stuffs xD\WebApps\social-media-app\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+F:\Creative Stuffs xD\WebApps\social-media-app\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+F:\Creative Stuffs xD\WebApps\social-media-app\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+F:\Creative Stuffs xD\WebApps\social-media-app\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+F:\Creative Stuffs xD\WebApps\social-media-app\Domain\obj\Debug\net6.0\Domain.dll
+F:\Creative Stuffs xD\WebApps\social-media-app\Domain\obj\Debug\net6.0\refint\Domain.dll
+F:\Creative Stuffs xD\WebApps\social-media-app\Domain\obj\Debug\net6.0\Domain.pdb
+F:\Creative Stuffs xD\WebApps\social-media-app\Domain\obj\Debug\net6.0\ref\Domain.dll

@@ -1,0 +1,17 @@
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\bin\Debug\net6.0\Application.deps.json
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\bin\Debug\net6.0\Application.dll
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\bin\Debug\net6.0\Application.pdb
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\bin\Debug\net6.0\Domain.dll
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\bin\Debug\net6.0\Persistance.dll
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\bin\Debug\net6.0\Domain.pdb
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\bin\Debug\net6.0\Persistance.pdb
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\Application.dll
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\refint\Application.dll
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\Application.pdb
+F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\ref\Application.dll

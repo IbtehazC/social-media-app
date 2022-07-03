@@ -1,0 +1,15 @@
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\bin\Debug\net6.0\Persistance.deps.json
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\bin\Debug\net6.0\Persistance.dll
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\bin\Debug\net6.0\Persistance.pdb
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\bin\Debug\net6.0\Domain.dll
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\bin\Debug\net6.0\Domain.pdb
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\Persistance.csproj.AssemblyReference.cache
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\Persistance.GeneratedMSBuildEditorConfig.editorconfig
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\Persistance.AssemblyInfoInputs.cache
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\Persistance.AssemblyInfo.cs
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\Persistance.csproj.CoreCompileInputs.cache
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\Persistance.csproj.CopyComplete
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\Persistance.dll
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\refint\Persistance.dll
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\Persistance.pdb
+F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\ref\Persistance.dll
