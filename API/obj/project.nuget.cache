@@ -1,10 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "QuwdqloXlGFHcySbVaaHfx8JkSTEAo1bsQAX+PSC30Y9D3c3slR92drtua8eC7yWrMhshPI5hBbUv4GdS2HEMg==",
+  "dgSpecHash": "m+I/aX75X/rkniTmnEer8wTgM46/aoEIwjCUE+xHEFeRMsXvQWrhj+rdqdZpFfB1n3LElXa4Qyw1MefWeYW6TQ==",
   "success": true,
-  "projectFilePath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\API\\API.csproj",
+  "projectFilePath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\API\\API.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Ibtehaz\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
+    "C:\\Users\\Ibtehaz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
     "C:\\Users\\Ibtehaz\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Ibtehaz\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Ibtehaz\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\Ibtehaz\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\Ibtehaz\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Ibtehaz\\.nuget\\packages\\microsoft.data.sqlite.core\\6.0.6\\microsoft.data.sqlite.core.6.0.6.nupkg.sha512",
     "C:\\Users\\Ibtehaz\\.nuget\\packages\\microsoft.entityframeworkcore\\6.0.6\\microsoft.entityframeworkcore.6.0.6.nupkg.sha512",
     "C:\\Users\\Ibtehaz\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\6.0.6\\microsoft.entityframeworkcore.abstractions.6.0.6.nupkg.sha512",

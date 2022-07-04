@@ -1,5 +1,9 @@
 using Microsoft.EntityFrameworkCore;
 using Persistance;
+using MediatR;
+using Application.Posts;
+using AutoMapper;
+using Application.Core;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -20,6 +24,8 @@ builder.Services.AddCors(options =>
         policy.AllowAnyMethod().AllowAnyHeader().WithOrigins("http://localhost:3000");
     });
 });
+builder.Services.AddMediatR(typeof(List.Handler).Assembly);
+builder.Services.AddAutoMapper(typeof(MappingProfiles).Assembly);
 
 var app = builder.Build();
 

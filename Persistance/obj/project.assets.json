@@ -1099,11 +1099,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj",
+      "projectUniqueName": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj",
       "projectName": "Persistance",
-      "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj",
+      "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj",
       "packagesPath": "C:\\Users\\Ibtehaz\\.nuget\\packages\\",
-      "outputPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\obj\\",
+      "outputPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1124,8 +1124,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj": {
-              "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj"
+            "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj": {
+              "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj"
             }
           }
         }
