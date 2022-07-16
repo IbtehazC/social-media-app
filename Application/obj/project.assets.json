@@ -1329,11 +1329,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj",
+      "projectUniqueName": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj",
+      "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj",
       "packagesPath": "C:\\Users\\Ibtehaz\\.nuget\\packages\\",
-      "outputPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\obj\\",
+      "outputPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1347,17 +1347,18 @@
         "net6.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj": {
-              "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj"
+            "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj": {
+              "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj"
             },
-            "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj": {
-              "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj"
+            "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj": {
+              "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj"
             }
           }
         }

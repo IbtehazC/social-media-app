@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "m+I/aX75X/rkniTmnEer8wTgM46/aoEIwjCUE+xHEFeRMsXvQWrhj+rdqdZpFfB1n3LElXa4Qyw1MefWeYW6TQ==",
+  "dgSpecHash": "8itEI70b/3lXTrjIDWVtAlBv2VIOlhb9FBnTC4pfro+0e/7hjE5BETb+PncJ7QZLy1zJSmi5k24PW1QA5Zp5nA==",
   "success": true,
-  "projectFilePath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\API\\API.csproj",
+  "projectFilePath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\api\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Ibtehaz\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\Ibtehaz\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",

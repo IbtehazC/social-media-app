@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\API\\API.csproj": {}
+    "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\api\\API.csproj": {}
   },
   "projects": {
-    "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\API\\API.csproj": {
+    "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\api\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\API\\API.csproj",
+        "projectUniqueName": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\api\\API.csproj",
         "projectName": "API",
-        "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\API\\API.csproj",
+        "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\api\\API.csproj",
         "packagesPath": "C:\\Users\\Ibtehaz\\.nuget\\packages\\",
-        "outputPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\API\\obj\\",
+        "outputPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -25,20 +25,21 @@
           "net6.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj": {
-                "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj"
+              "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj": {
+                "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj"
               },
-              "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj": {
-                "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj"
+              "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj": {
+                "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj"
               },
-              "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj": {
-                "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj"
+              "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj": {
+                "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj"
               }
             }
           }
@@ -98,14 +99,14 @@
         }
       }
     },
-    "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj": {
+    "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj",
+        "projectUniqueName": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj",
+        "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\Ibtehaz\\.nuget\\packages\\",
-        "outputPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\obj\\",
+        "outputPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -126,11 +127,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj": {
-                "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj"
+              "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj": {
+                "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj"
               },
-              "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj": {
-                "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj"
+              "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj": {
+                "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj"
               }
             }
           }
@@ -173,14 +174,14 @@
         }
       }
     },
-    "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj": {
+    "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj",
+        "projectUniqueName": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj",
+        "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\Ibtehaz\\.nuget\\packages\\",
-        "outputPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\obj\\",
+        "outputPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -231,14 +232,14 @@
         }
       }
     },
-    "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj": {
+    "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj",
+        "projectUniqueName": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj",
         "projectName": "Persistance",
-        "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj",
+        "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\Persistance.csproj",
         "packagesPath": "C:\\Users\\Ibtehaz\\.nuget\\packages\\",
-        "outputPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\obj\\",
+        "outputPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Persistance\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -259,8 +260,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj": {
-                "projectPath": "f:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj"
+              "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj": {
+                "projectPath": "F:\\Creative Stuffs xD\\WebApps\\social-media-app\\Domain\\Domain.csproj"
               }
             }
           }
