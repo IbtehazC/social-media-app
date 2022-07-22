@@ -1,15 +1,17 @@
 import { useEffect, useState } from "react";
-import axios from "axios";
 
-import { Container } from "@chakra-ui/react";
+import { Container, Spinner, Text, Flex } from "@chakra-ui/react";
 import { Post } from "./models/post";
 import NavBar from "./components/navbar/NavBar";
 import PostDashboard from "./components/post/PostDashboard";
+import agent from "./api/agent";
+import { v4 as uuid } from "uuid";
 
 function App() {
   const [posts, setPosts] = useState<Post[]>([]);
   const [selectedPost, setSelectedPost] = useState<Post | undefined>(undefined);
   const [editMode, setEditMode] = useState(false);
+  const [loading, setLoading] = useState(true);
 
   const handleSelectPost = (id: string) => {
     setSelectedPost(posts.find((x) => x.id === id));
@@ -28,11 +30,34 @@ function App() {
     setEditMode(false);
   };
 
+  function handleCreateOrEditPost(post: Post) {
+    post.id
+      ? setPosts([...posts.filter((x) => x.id !== post.id), post])
+      : setPosts([...posts, { ...post, id: uuid() }]);
+    setEditMode(false);
+    setSelectedPost(post);
+  }
+
   useEffect(() => {
-    axios.get<Post[]>("http://localhost:5130/api/posts").then((res) => {
-      setPosts(res.data);
+    agent.Posts.list().then((res) => {
+      setPosts(res);
+      setLoading(false);
     });
   }, []);
+
+  if (loading)
+    return (
+      <Flex h={"100vh"} justifyContent="center" alignItems="center" gap="4">
+        <Spinner
+          thickness="4px"
+          speed="0.65s"
+          emptyColor="gray.200"
+          color="blue.500"
+          size="xl"
+        />
+        <Text color={"#06113C"}>Loading App</Text>
+      </Flex>
+    );
 
   return (
     <>
@@ -46,6 +71,7 @@ function App() {
           openForm={handleOpenForm}
           closeForm={handleCancelForm}
           editMode={editMode}
+          createOrEdit={handleCreateOrEditPost}
         />
       </Container>
     </>

@@ -7,15 +7,25 @@ import {
   Button,
   Textarea,
 } from "@chakra-ui/react";
-import { ChangeEvent, useState } from "react";
+import {
+  ChangeEvent,
+  DetailedHTMLFactory,
+  FormEventHandler,
+  useState,
+} from "react";
 import { Post } from "../../models/post";
 
 interface Props {
   post: Post;
   closeForm: () => void;
+  createOrEdit: (post: Post) => void;
 }
 
-export default function PostForm({ closeForm, post: selectedPost }: Props) {
+export default function PostForm({
+  closeForm,
+  post: selectedPost,
+  createOrEdit,
+}: Props) {
   const initialState = selectedPost ?? {
     id: "",
     heading: "",
@@ -27,6 +37,11 @@ export default function PostForm({ closeForm, post: selectedPost }: Props) {
 
   const [post, setPost] = useState(initialState);
 
+  const handleSubmit = (e: ChangeEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    createOrEdit(post);
+  };
+
   const handleFormInputChange = (
     e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -37,32 +52,44 @@ export default function PostForm({ closeForm, post: selectedPost }: Props) {
   return (
     <Box rounded={"lg"} boxShadow={"lg"} p={8} bg={"#EEEEEE"}>
       <Stack spacing={4}>
-        <FormControl id="heading" isRequired>
-          <FormLabel>Title</FormLabel>
-          <Input
-            name="heading"
-            type="text"
-            variant={"filled"}
-            bg={"#e7e7e7"}
-            value={post.heading}
-            onChange={handleFormInputChange}
-          />
-        </FormControl>
-        <FormControl id="description" isRequired>
-          <FormLabel>Description</FormLabel>
-          <Textarea
-            name="description"
-            variant={"filled"}
-            bg={"#e7e7e7"}
-            value={post.description}
-            onChange={handleFormInputChange}
-          />
-        </FormControl>
-        <Stack spacing={10} pt={2}>
-          <Button colorScheme={"orange"} size="lg" onClick={() => closeForm()}>
-            Done
-          </Button>
-        </Stack>
+        <form onSubmit={handleSubmit} autoComplete="off">
+          <FormControl id="heading" isRequired>
+            <FormLabel>Title</FormLabel>
+            <Input
+              name="heading"
+              type="text"
+              variant={"filled"}
+              bg={"#e7e7e7"}
+              value={post.heading}
+              onChange={handleFormInputChange}
+            />
+          </FormControl>
+          <FormControl id="description" isRequired>
+            <FormLabel>Description</FormLabel>
+            <Textarea
+              name="description"
+              variant={"filled"}
+              bg={"#e7e7e7"}
+              value={post.description}
+              onChange={handleFormInputChange}
+            />
+          </FormControl>
+          <Stack spacing={10} pt={2}>
+            <Button colorScheme={"orange"} size="lg" type="submit">
+              Done
+            </Button>
+            <Button
+              colorScheme={"red"}
+              size="lg"
+              onClick={(e) => {
+                e.preventDefault();
+                closeForm();
+              }}
+            >
+              Cancel
+            </Button>
+          </Stack>
+        </form>
       </Stack>
     </Box>
   );

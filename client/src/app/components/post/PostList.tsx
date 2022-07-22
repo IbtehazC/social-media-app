@@ -18,7 +18,13 @@ export default function PostList({ posts, selectPost }: Props) {
   return (
     <Box background="#EEEEEE" borderRadius="lg" p={4} boxShadow={"lg"}>
       {posts.map((post) => (
-        <Box width={"100%"} rounded={"md"} p={6} overflow={"hidden"}>
+        <Box
+          key={post.id}
+          width={"100%"}
+          rounded={"md"}
+          p={6}
+          overflow={"hidden"}
+        >
           <Stack>
             <Text
               color={"#FF8C32"}

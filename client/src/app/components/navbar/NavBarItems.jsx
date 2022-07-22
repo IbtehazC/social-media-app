@@ -13,7 +13,7 @@ export default function NavBarItems() {
       <a href="/">Home</a>
       <a href="#how">Somewhere</a>
       <Button colorScheme="orange" size="md">
-        Button
+        Create Post
       </Button>
     </Stack>
   );

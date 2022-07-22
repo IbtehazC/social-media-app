@@ -12,6 +12,7 @@ interface Props {
   cancelSelectedPost: () => void;
   openForm: (id?: string) => void;
   closeForm: () => void;
+  createOrEdit: (post: Post) => void;
 }
 
 export default function PostDashboard({
@@ -22,6 +23,7 @@ export default function PostDashboard({
   openForm,
   closeForm,
   editMode,
+  createOrEdit,
 }: Props) {
   return (
     <Grid templateColumns="repeat(12, 1fr)" gap={4}>
@@ -38,7 +40,11 @@ export default function PostDashboard({
                 cancelSelectedPost={cancelSelectedPost}
               />
             ) : (
-              <PostForm closeForm={closeForm} post={selectedPost} />
+              <PostForm
+                closeForm={closeForm}
+                post={selectedPost}
+                createOrEdit={createOrEdit}
+              />
             )}
           </>
         )}

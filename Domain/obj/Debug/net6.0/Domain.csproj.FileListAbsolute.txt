@@ -10,3 +10,15 @@ F:\Creative Stuffs xD\WebApps\social-media-app\Domain\obj\Debug\net6.0\Domain.dl
 F:\Creative Stuffs xD\WebApps\social-media-app\Domain\obj\Debug\net6.0\refint\Domain.dll
 F:\Creative Stuffs xD\WebApps\social-media-app\Domain\obj\Debug\net6.0\Domain.pdb
 F:\Creative Stuffs xD\WebApps\social-media-app\Domain\obj\Debug\net6.0\ref\Domain.dll
+D:\Repositories\social-media-app\Domain\bin\Debug\net6.0\Domain.deps.json
+D:\Repositories\social-media-app\Domain\bin\Debug\net6.0\Domain.dll
+D:\Repositories\social-media-app\Domain\bin\Debug\net6.0\Domain.pdb
+D:\Repositories\social-media-app\Domain\obj\Debug\net6.0\Domain.csproj.AssemblyReference.cache
+D:\Repositories\social-media-app\Domain\obj\Debug\net6.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositories\social-media-app\Domain\obj\Debug\net6.0\Domain.AssemblyInfoInputs.cache
+D:\Repositories\social-media-app\Domain\obj\Debug\net6.0\Domain.AssemblyInfo.cs
+D:\Repositories\social-media-app\Domain\obj\Debug\net6.0\Domain.csproj.CoreCompileInputs.cache
+D:\Repositories\social-media-app\Domain\obj\Debug\net6.0\Domain.dll
+D:\Repositories\social-media-app\Domain\obj\Debug\net6.0\refint\Domain.dll
+D:\Repositories\social-media-app\Domain\obj\Debug\net6.0\Domain.pdb
+D:\Repositories\social-media-app\Domain\obj\Debug\net6.0\ref\Domain.dll

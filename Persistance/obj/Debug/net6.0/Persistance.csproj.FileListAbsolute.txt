@@ -13,3 +13,18 @@ F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\Pers
 F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\refint\Persistance.dll
 F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\Persistance.pdb
 F:\Creative Stuffs xD\WebApps\social-media-app\Persistance\obj\Debug\net6.0\ref\Persistance.dll
+D:\Repositories\social-media-app\Persistance\bin\Debug\net6.0\Persistance.deps.json
+D:\Repositories\social-media-app\Persistance\bin\Debug\net6.0\Persistance.dll
+D:\Repositories\social-media-app\Persistance\bin\Debug\net6.0\Persistance.pdb
+D:\Repositories\social-media-app\Persistance\bin\Debug\net6.0\Domain.dll
+D:\Repositories\social-media-app\Persistance\bin\Debug\net6.0\Domain.pdb
+D:\Repositories\social-media-app\Persistance\obj\Debug\net6.0\Persistance.csproj.AssemblyReference.cache
+D:\Repositories\social-media-app\Persistance\obj\Debug\net6.0\Persistance.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositories\social-media-app\Persistance\obj\Debug\net6.0\Persistance.AssemblyInfoInputs.cache
+D:\Repositories\social-media-app\Persistance\obj\Debug\net6.0\Persistance.AssemblyInfo.cs
+D:\Repositories\social-media-app\Persistance\obj\Debug\net6.0\Persistance.csproj.CoreCompileInputs.cache
+D:\Repositories\social-media-app\Persistance\obj\Debug\net6.0\Persistance.csproj.CopyComplete
+D:\Repositories\social-media-app\Persistance\obj\Debug\net6.0\Persistance.dll
+D:\Repositories\social-media-app\Persistance\obj\Debug\net6.0\refint\Persistance.dll
+D:\Repositories\social-media-app\Persistance\obj\Debug\net6.0\Persistance.pdb
+D:\Repositories\social-media-app\Persistance\obj\Debug\net6.0\ref\Persistance.dll

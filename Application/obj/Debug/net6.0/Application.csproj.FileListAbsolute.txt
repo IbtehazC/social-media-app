@@ -15,3 +15,20 @@ F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\Appl
 F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\refint\Application.dll
 F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\Application.pdb
 F:\Creative Stuffs xD\WebApps\social-media-app\Application\obj\Debug\net6.0\ref\Application.dll
+D:\Repositories\social-media-app\Application\bin\Debug\net6.0\Application.deps.json
+D:\Repositories\social-media-app\Application\bin\Debug\net6.0\Application.dll
+D:\Repositories\social-media-app\Application\bin\Debug\net6.0\Application.pdb
+D:\Repositories\social-media-app\Application\bin\Debug\net6.0\Domain.dll
+D:\Repositories\social-media-app\Application\bin\Debug\net6.0\Persistance.dll
+D:\Repositories\social-media-app\Application\bin\Debug\net6.0\Domain.pdb
+D:\Repositories\social-media-app\Application\bin\Debug\net6.0\Persistance.pdb
+D:\Repositories\social-media-app\Application\obj\Debug\net6.0\Application.csproj.AssemblyReference.cache
+D:\Repositories\social-media-app\Application\obj\Debug\net6.0\Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Repositories\social-media-app\Application\obj\Debug\net6.0\Application.AssemblyInfoInputs.cache
+D:\Repositories\social-media-app\Application\obj\Debug\net6.0\Application.AssemblyInfo.cs
+D:\Repositories\social-media-app\Application\obj\Debug\net6.0\Application.csproj.CoreCompileInputs.cache
+D:\Repositories\social-media-app\Application\obj\Debug\net6.0\Application.csproj.CopyComplete
+D:\Repositories\social-media-app\Application\obj\Debug\net6.0\Application.dll
+D:\Repositories\social-media-app\Application\obj\Debug\net6.0\refint\Application.dll
+D:\Repositories\social-media-app\Application\obj\Debug\net6.0\Application.pdb
+D:\Repositories\social-media-app\Application\obj\Debug\net6.0\ref\Application.dll
