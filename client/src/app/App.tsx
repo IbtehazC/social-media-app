@@ -12,6 +12,7 @@ function App() {
   const [selectedPost, setSelectedPost] = useState<Post | undefined>(undefined);
   const [editMode, setEditMode] = useState(false);
   const [loading, setLoading] = useState(true);
+  const [submitting, setSubmitting] = useState(false);
 
   const handleSelectPost = (id: string) => {
     setSelectedPost(posts.find((x) => x.id === id));
@@ -31,15 +32,40 @@ function App() {
   };
 
   function handleCreateOrEditPost(post: Post) {
-    post.id
-      ? setPosts([...posts.filter((x) => x.id !== post.id), post])
-      : setPosts([...posts, { ...post, id: uuid() }]);
-    setEditMode(false);
-    setSelectedPost(post);
+    setSubmitting(true);
+    if (post.id) {
+      agent.Posts.update(post).then(() => {
+        setPosts([...posts.filter((x) => x.id !== post.id), post]);
+        setSelectedPost(post);
+        setEditMode(false);
+        setSubmitting(false);
+      });
+    } else {
+      post.id = uuid();
+      agent.Posts.create(post).then(() => {
+        setPosts([...posts, post]);
+        setSelectedPost(post);
+        setEditMode(false);
+        setSubmitting(false);
+      });
+    }
   }
+
+  const handleDeletePost = (id: string) => {
+    setSubmitting(true);
+    agent.Posts.delete(id).then(() => {
+      setPosts([...posts.filter((x) => x.id !== id)]);
+      setSubmitting(false);
+    });
+  };
 
   useEffect(() => {
     agent.Posts.list().then((res) => {
+      let posts: Post[] = [];
+      res.forEach((post) => {
+        post.createdAt = post.createdAt.split("T")[0];
+        posts.push(post);
+      });
       setPosts(res);
       setLoading(false);
     });
@@ -61,7 +87,7 @@ function App() {
 
   return (
     <>
-      <NavBar />
+      <NavBar openForm={handleOpenForm} />
       <Container maxW={"container.xl"} marginTop={4}>
         <PostDashboard
           posts={posts}
@@ -72,6 +98,8 @@ function App() {
           closeForm={handleCancelForm}
           editMode={editMode}
           createOrEdit={handleCreateOrEditPost}
+          deletePost={handleDeletePost}
+          submitting={submitting}
         />
       </Container>
     </>

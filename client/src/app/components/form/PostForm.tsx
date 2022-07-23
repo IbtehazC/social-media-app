@@ -7,24 +7,21 @@ import {
   Button,
   Textarea,
 } from "@chakra-ui/react";
-import {
-  ChangeEvent,
-  DetailedHTMLFactory,
-  FormEventHandler,
-  useState,
-} from "react";
+import { ChangeEvent, useState } from "react";
 import { Post } from "../../models/post";
 
 interface Props {
-  post: Post;
+  post?: Post | undefined;
   closeForm: () => void;
   createOrEdit: (post: Post) => void;
+  submitting: boolean;
 }
 
 export default function PostForm({
   closeForm,
   post: selectedPost,
   createOrEdit,
+  submitting,
 }: Props) {
   const initialState = selectedPost ?? {
     id: "",
@@ -32,7 +29,7 @@ export default function PostForm({
     description: "",
     createdAt: "",
     category: "",
-    reacts: "",
+    reacts: 0,
   };
 
   const [post, setPost] = useState(initialState);
@@ -74,18 +71,26 @@ export default function PostForm({
               onChange={handleFormInputChange}
             />
           </FormControl>
+          <FormControl id="createdAt" isRequired>
+            <Input
+              name="createdAt"
+              type="date"
+              variant={"filled"}
+              bg={"#e7e7e7"}
+              value={post.createdAt}
+              onChange={handleFormInputChange}
+            />
+          </FormControl>
           <Stack spacing={10} pt={2}>
-            <Button colorScheme={"orange"} size="lg" type="submit">
+            <Button
+              colorScheme={"orange"}
+              size="lg"
+              type="submit"
+              isLoading={submitting}
+            >
               Done
             </Button>
-            <Button
-              colorScheme={"red"}
-              size="lg"
-              onClick={(e) => {
-                e.preventDefault();
-                closeForm();
-              }}
-            >
+            <Button colorScheme={"red"} size="lg" onClick={closeForm}>
               Cancel
             </Button>
           </Stack>

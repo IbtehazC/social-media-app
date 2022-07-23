@@ -3,6 +3,7 @@ import { Post } from "../../models/post";
 import PostForm from "../form/PostForm";
 import PostDetails from "./PostDetails";
 import PostList from "./PostList";
+import { useState } from "react";
 
 interface Props {
   posts: Post[];
@@ -13,6 +14,8 @@ interface Props {
   openForm: (id?: string) => void;
   closeForm: () => void;
   createOrEdit: (post: Post) => void;
+  deletePost: (id: string) => void;
+  submitting: boolean;
 }
 
 export default function PostDashboard({
@@ -24,29 +27,34 @@ export default function PostDashboard({
   closeForm,
   editMode,
   createOrEdit,
+  deletePost,
+  submitting,
 }: Props) {
   return (
     <Grid templateColumns="repeat(12, 1fr)" gap={4}>
       <GridItem colSpan={8}>
-        <PostList posts={posts} selectPost={selectPost} />
+        <PostList
+          posts={posts}
+          selectPost={selectPost}
+          deletePost={deletePost}
+          submitting={submitting}
+        />
       </GridItem>
       <GridItem colSpan={4}>
-        {selectedPost && (
-          <>
-            {!editMode ? (
-              <PostDetails
-                post={selectedPost}
-                openForm={openForm}
-                cancelSelectedPost={cancelSelectedPost}
-              />
-            ) : (
-              <PostForm
-                closeForm={closeForm}
-                post={selectedPost}
-                createOrEdit={createOrEdit}
-              />
-            )}
-          </>
+        {selectedPost && !editMode && (
+          <PostDetails
+            post={selectedPost}
+            openForm={openForm}
+            cancelSelectedPost={cancelSelectedPost}
+          />
+        )}
+        {editMode && (
+          <PostForm
+            closeForm={closeForm}
+            createOrEdit={createOrEdit}
+            post={selectedPost}
+            submitting={submitting}
+          />
         )}
       </GridItem>
     </Grid>
