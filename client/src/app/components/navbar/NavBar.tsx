@@ -2,11 +2,7 @@ import NavBarItems from "./NavBarItems";
 import NavbarLogo from "./NavbarLogo";
 import { Flex } from "@chakra-ui/react";
 
-interface Props {
-  openForm: () => void;
-}
-
-export default function NavBar({ openForm }: Props) {
+export default function NavBar() {
   return (
     <Flex
       as="nav"
@@ -19,7 +15,7 @@ export default function NavBar({ openForm }: Props) {
       color="#06113C"
     >
       <NavbarLogo />
-      <NavBarItems openForm={openForm} />
+      <NavBarItems />
     </Flex>
   );
 }

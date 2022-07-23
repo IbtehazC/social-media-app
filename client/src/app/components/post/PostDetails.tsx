@@ -1,27 +1,21 @@
 import {
   Box,
   Button,
-  Divider,
   Flex,
   Heading,
   Stack,
   Text,
   Image,
+  Spinner,
 } from "@chakra-ui/react";
-import React from "react";
-import { Post } from "../../models/post";
+import { useStore } from "../../stores/store";
 
-interface Props {
-  post: Post;
-  cancelSelectedPost: () => void;
-  openForm: (id?: string) => void;
-}
+export default function PostDetails() {
+  const { postStore } = useStore();
+  const { selectedPost: post, openForm, cancelSelectedPost } = postStore;
 
-export default function PostDetails({
-  post,
-  cancelSelectedPost,
-  openForm,
-}: Props) {
+  if (!post) return <Spinner />;
+
   return (
     <Box
       width={"100%"}

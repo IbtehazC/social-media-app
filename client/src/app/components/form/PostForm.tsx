@@ -7,22 +7,15 @@ import {
   Button,
   Textarea,
 } from "@chakra-ui/react";
+import { observer } from "mobx-react-lite";
 import { ChangeEvent, useState } from "react";
-import { Post } from "../../models/post";
+import { useStore } from "../../stores/store";
 
-interface Props {
-  post?: Post | undefined;
-  closeForm: () => void;
-  createOrEdit: (post: Post) => void;
-  submitting: boolean;
-}
+export default observer(function PostForm() {
+  const { postStore } = useStore();
+  const { selectedPost, closeForm, createPost, updatePost, loading } =
+    postStore;
 
-export default function PostForm({
-  closeForm,
-  post: selectedPost,
-  createOrEdit,
-  submitting,
-}: Props) {
   const initialState = selectedPost ?? {
     id: "",
     heading: "",
@@ -36,7 +29,7 @@ export default function PostForm({
 
   const handleSubmit = (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
-    createOrEdit(post);
+    post.id ? updatePost(post) : createPost(post);
   };
 
   const handleFormInputChange = (
@@ -86,7 +79,7 @@ export default function PostForm({
               colorScheme={"orange"}
               size="lg"
               type="submit"
-              isLoading={submitting}
+              isLoading={loading}
             >
               Done
             </Button>
@@ -98,4 +91,4 @@ export default function PostForm({
       </Stack>
     </Box>
   );
-}
+});

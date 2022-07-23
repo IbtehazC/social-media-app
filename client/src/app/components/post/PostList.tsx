@@ -7,22 +7,14 @@ import {
   Button,
   Flex,
 } from "@chakra-ui/react";
-import { Post } from "../../models/post";
 import { SyntheticEvent, useState } from "react";
+import { useStore } from "../../stores/store";
+import { observer } from "mobx-react-lite";
 
-interface Props {
-  posts: Post[];
-  selectPost: (id: string) => void;
-  deletePost: (id: string) => void;
-  submitting: boolean;
-}
+export default observer(function PostList() {
+  const { postStore } = useStore();
+  const { deletePost, postsByDate, loading } = postStore;
 
-export default function PostList({
-  posts,
-  selectPost,
-  deletePost,
-  submitting,
-}: Props) {
   const [target, setTarget] = useState("");
 
   const handlePostDelete = (
@@ -35,7 +27,7 @@ export default function PostList({
 
   return (
     <Box background="#EEEEEE" borderRadius="lg" p={4} boxShadow={"lg"}>
-      {posts.map((post) => (
+      {postsByDate.map((post) => (
         <Box
           key={post.id}
           width={"100%"}
@@ -73,14 +65,14 @@ export default function PostList({
             <Flex gap={8}>
               <Button
                 colorScheme={"orange"}
-                onClick={() => selectPost(post.id)}
+                onClick={() => postStore.selectPost(post.id)}
               >
                 View
               </Button>
               <Button
                 colorScheme={"red"}
                 onClick={(e) => handlePostDelete(e, post.id)}
-                isLoading={submitting && target === post.id}
+                isLoading={loading && target === post.id}
               >
                 Delete
               </Button>
@@ -91,4 +83,4 @@ export default function PostList({
       ))}
     </Box>
   );
-}
+});
