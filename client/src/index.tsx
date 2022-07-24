@@ -5,16 +5,19 @@ import { ChakraProvider } from "@chakra-ui/react";
 import reportWebVitals from "./reportWebVitals";
 import { theme } from "./app/theme/theme";
 import { store, StoreContext } from "./app/stores/store";
+import { BrowserRouter as Router } from "react-router-dom";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-  <StoreContext.Provider value={store}>
-    <ChakraProvider theme={theme}>
-      <App />
-    </ChakraProvider>
-  </StoreContext.Provider>
+  <Router>
+    <StoreContext.Provider value={store}>
+      <ChakraProvider theme={theme}>
+        <App />
+      </ChakraProvider>
+    </StoreContext.Provider>
+  </Router>
 );
 
 // If you want to start measuring performance in your app, pass a function

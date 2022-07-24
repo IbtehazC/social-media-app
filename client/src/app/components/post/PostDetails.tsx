@@ -8,13 +8,35 @@ import {
   Image,
   Spinner,
 } from "@chakra-ui/react";
+import { useParams } from "react-router-dom";
 import { useStore } from "../../stores/store";
+import { useEffect } from "react";
+import { observer } from "mobx-react-lite";
+import { Link } from "react-router-dom";
 
-export default function PostDetails() {
+export default observer(function PostDetails() {
   const { postStore } = useStore();
-  const { selectedPost: post, openForm, cancelSelectedPost } = postStore;
+  const { selectedPost: post, loadPost, loadingInitial } = postStore;
 
-  if (!post) return <Spinner />;
+  const { id } = useParams<{ id: string }>();
+
+  useEffect(() => {
+    if (id) loadPost(id);
+  }, [id, loadPost]);
+
+  if (loadingInitial || !post)
+    return (
+      <Flex h={"100vh"} justifyContent="center" alignItems="center" gap="4">
+        <Spinner
+          thickness="4px"
+          speed="0.65s"
+          emptyColor="gray.200"
+          color="blue.500"
+          size="xl"
+        />
+        <Text color={"#06113C"}>Loading Post</Text>
+      </Flex>
+    );
 
   return (
     <Box
@@ -50,29 +72,23 @@ export default function PostDetails() {
           <Stack direction={"column"} spacing={0} fontSize={"sm"}>
             <Text fontWeight={600}>Reacts: {post.reacts}</Text>
             <Text color={"gray.500"} fontSize="xs">
-              {post.createdAt.toString()}
+              {post.createdAt}
             </Text>
           </Stack>
         </Stack>
         <Flex justify={"space-between"} gap={2}>
-          <Button
-            colorScheme={"blue"}
-            variant={"outline"}
-            w={"100%"}
-            onClick={() => openForm(post.id)}
-          >
-            Edit
-          </Button>
-          <Button
-            colorScheme={"red"}
-            w={"100%"}
-            variant={"outline"}
-            onClick={() => cancelSelectedPost()}
-          >
-            Cancel
-          </Button>
+          <Link to={`/posts/${post.id}/edit`}>
+            <Button colorScheme={"blue"} variant={"outline"} w={"100%"}>
+              Edit
+            </Button>
+          </Link>
+          <Link to="/posts">
+            <Button colorScheme={"red"} w={"100%"} variant={"outline"}>
+              Cancel
+            </Button>
+          </Link>
         </Flex>
       </Box>
     </Box>
   );
-}
+});

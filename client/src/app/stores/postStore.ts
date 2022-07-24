@@ -1,14 +1,13 @@
 import { makeAutoObservable, runInAction } from "mobx";
 import agent from "../api/agent";
 import { Post } from "../models/post";
-import { v4 as uuid } from "uuid";
 
 export default class PostStore {
   postRegistry = new Map<string, Post>();
   selectedPost: Post | undefined = undefined;
   editMode = false;
   loading = false;
-  loadingInitial = true;
+  loadingInitial = false;
 
   constructor() {
     makeAutoObservable(this);
@@ -21,11 +20,13 @@ export default class PostStore {
   }
 
   loadPosts = async () => {
+    this.loadingInitial = true;
     try {
       const posts = await agent.Posts.list();
-      posts.forEach((post) => {
-        post.createdAt = post.createdAt.split("T")[0];
-        this.postRegistry.set(post.id, post);
+      runInAction(() => {
+        posts.forEach((post) => {
+          this.setPost(post);
+        });
       });
       this.setLoadingInitial(false);
     } catch (err) {
@@ -34,30 +35,49 @@ export default class PostStore {
     }
   };
 
+  loadPost = async (id: string) => {
+    let post = this.getPost(id);
+    if (post) {
+      this.selectedPost = post;
+      return post;
+    } else {
+      this.loadingInitial = true;
+      try {
+        post = await agent.Posts.details(id);
+        console.log(post);
+        runInAction(() => {
+          if (post === undefined) {
+            this.selectedPost = undefined;
+            this.setLoadingInitial(false);
+            return;
+          }
+          this.setPost(post);
+          this.selectedPost = post;
+        });
+        this.setLoadingInitial(false);
+        return post;
+      } catch (err) {
+        console.log(err);
+        this.setLoadingInitial(false);
+      }
+    }
+  };
+
+  private setPost = (post: Post) => {
+    post.createdAt = post.createdAt.split("T")[0];
+    this.postRegistry.set(post.id, post);
+  };
+
+  private getPost = (id: string) => {
+    return this.postRegistry.get(id);
+  };
+
   setLoadingInitial = (state: boolean) => {
     this.loadingInitial = state;
   };
 
-  selectPost = (id: string) => {
-    this.selectedPost = this.postRegistry.get(id);
-  };
-
-  cancelSelectedPost = () => {
-    this.selectedPost = undefined;
-  };
-
-  openForm = (id?: string) => {
-    id ? this.selectPost(id) : this.cancelSelectedPost();
-    this.editMode = true;
-  };
-
-  closeForm = () => {
-    this.editMode = false;
-  };
-
   createPost = async (post: Post) => {
     this.loading = true;
-    post.id = uuid();
     try {
       await agent.Posts.create(post);
 
@@ -99,7 +119,6 @@ export default class PostStore {
       await agent.Posts.delete(id);
       runInAction(() => {
         this.postRegistry.delete(id);
-        if (this.selectedPost?.id === id) this.cancelSelectedPost();
         this.loading = false;
       });
     } catch (err) {

@@ -1,36 +1,27 @@
-import { useEffect } from "react";
-import { Container, Spinner, Text, Flex } from "@chakra-ui/react";
+import { Container } from "@chakra-ui/react";
 import NavBar from "./components/navbar/NavBar";
 import PostDashboard from "./components/post/PostDashboard";
-import { useStore } from "./stores/store";
 import { observer } from "mobx-react-lite";
+import { Route, Routes, useLocation } from "react-router-dom";
+import Home from "./pages/home/Home";
+import PostForm from "./components/form/PostForm";
+import PostDetails from "./components/post/PostDetails";
 
 function App() {
-  const { postStore } = useStore();
-
-  useEffect(() => {
-    postStore.loadPosts();
-  }, [postStore]);
-
-  if (postStore.loadingInitial)
-    return (
-      <Flex h={"100vh"} justifyContent="center" alignItems="center" gap="4">
-        <Spinner
-          thickness="4px"
-          speed="0.65s"
-          emptyColor="gray.200"
-          color="blue.500"
-          size="xl"
-        />
-        <Text color={"#06113C"}>Loading App</Text>
-      </Flex>
-    );
+  const location = useLocation();
 
   return (
     <>
       <NavBar />
       <Container maxW={"container.xl"} marginTop={4}>
-        <PostDashboard />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/posts" element={<PostDashboard />} />
+          <Route path="/posts/:id" element={<PostDetails />} />
+          {["/posts/create", "/posts/:id/edit"].map((path) => (
+            <Route key={location.key} path={path} element={<PostForm />} />
+          ))}
+        </Routes>
       </Container>
     </>
   );

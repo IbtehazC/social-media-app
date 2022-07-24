@@ -1,10 +1,7 @@
-import React from "react";
 import { Stack, Button } from "@chakra-ui/react";
-import { useStore } from "../../stores/store";
+import { NavLink } from "react-router-dom";
 
 export default function NavBarItems() {
-  const { postStore } = useStore();
-
   return (
     <Stack
       spacing={8}
@@ -13,15 +10,13 @@ export default function NavBarItems() {
       direction={["column", "row", "row", "row"]}
       pt={[4, 4, 0, 0]}
     >
-      <a href="/">Home</a>
-      <a href="#how">Somewhere</a>
-      <Button
-        colorScheme="orange"
-        size="md"
-        onClick={() => postStore.openForm()}
-      >
-        Create Post
-      </Button>
+      <NavLink to="/">Home</NavLink>
+      <NavLink to="/posts">Posts</NavLink>
+      <NavLink to="/posts/create">
+        <Button colorScheme="orange" size="md">
+          Create Post
+        </Button>
+      </NavLink>
     </Stack>
   );
 }

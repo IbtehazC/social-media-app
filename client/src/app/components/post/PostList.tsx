@@ -10,6 +10,7 @@ import {
 import { SyntheticEvent, useState } from "react";
 import { useStore } from "../../stores/store";
 import { observer } from "mobx-react-lite";
+import { Link } from "react-router-dom";
 
 export default observer(function PostList() {
   const { postStore } = useStore();
@@ -59,16 +60,13 @@ export default observer(function PostList() {
             <Stack direction={"column"} spacing={0} fontSize={"sm"}>
               <Text fontWeight={600}>Reacts: {post.reacts}</Text>
               <Text color={"gray.500"} fontSize="xs">
-                {post.createdAt.toString()}
+                {post.createdAt}
               </Text>
             </Stack>
             <Flex gap={8}>
-              <Button
-                colorScheme={"orange"}
-                onClick={() => postStore.selectPost(post.id)}
-              >
-                View
-              </Button>
+              <Link to={`/posts/${post.id}`}>
+                <Button colorScheme={"orange"}>View</Button>
+              </Link>
               <Button
                 colorScheme={"red"}
                 onClick={(e) => handlePostDelete(e, post.id)}

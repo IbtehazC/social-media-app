@@ -1,6 +1,7 @@
 import NavBarItems from "./NavBarItems";
 import NavbarLogo from "./NavbarLogo";
 import { Flex } from "@chakra-ui/react";
+import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   return (
@@ -14,7 +15,9 @@ export default function NavBar() {
       bg="#EEEEEE"
       color="#06113C"
     >
-      <NavbarLogo />
+      <NavLink to="/">
+        <NavbarLogo />
+      </NavLink>
       <NavBarItems />
     </Flex>
   );
