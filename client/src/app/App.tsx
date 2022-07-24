@@ -1,11 +1,11 @@
 import { Container } from "@chakra-ui/react";
 import NavBar from "./components/navbar/NavBar";
-import PostDashboard from "./components/post/PostDashboard";
+import PostDashboard from "./components/post/dashboard/PostDashboard";
 import { observer } from "mobx-react-lite";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Home from "./pages/home/Home";
 import PostForm from "./components/form/PostForm";
-import PostDetails from "./components/post/PostDetails";
+import PostDetails from "./components/post/details/PostDetails";
 
 function App() {
   const location = useLocation();

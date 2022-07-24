@@ -1,6 +1,6 @@
 import { Grid, GridItem, Flex, Spinner, Text } from "@chakra-ui/react";
-import PostList from "./PostList";
-import { useStore } from "../../stores/store";
+import PostList from "../list/PostList";
+import { useStore } from "../../../stores/store";
 import { observer } from "mobx-react-lite";
 import { useEffect } from "react";
 

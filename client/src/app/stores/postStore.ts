@@ -19,6 +19,18 @@ export default class PostStore {
     );
   }
 
+  get groupedPosts() {
+    return Object.entries(
+      this.postsByDate.reduce((posts, post) => {
+        const createdAt = post.createdAt;
+        posts[createdAt] = posts[createdAt]
+          ? [...posts[createdAt], post]
+          : [post];
+        return posts;
+      }, {} as { [key: string]: Post[] })
+    );
+  }
+
   loadPosts = async () => {
     this.loadingInitial = true;
     try {
@@ -44,7 +56,6 @@ export default class PostStore {
       this.loadingInitial = true;
       try {
         post = await agent.Posts.details(id);
-        console.log(post);
         runInAction(() => {
           if (post === undefined) {
             this.selectedPost = undefined;
