@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Application.Core;
 using Domain;
 using MediatR;
 using Persistance;
@@ -10,12 +11,12 @@ namespace Application.Posts
 {
     public class Details
     {
-        public class Query : IRequest<Post>
+        public class Query : IRequest<Result<Post>>
         {
             public Guid Id { get; set; }
         }
 
-        public class Handler : IRequestHandler<Query, Post>
+        public class Handler : IRequestHandler<Query, Result<Post>>
         {
             private readonly DataContext context;
 
@@ -24,9 +25,10 @@ namespace Application.Posts
                 this.context = context;
             }
 
-            public async Task<Post> Handle(Query request, CancellationToken cancellationToken)
+            public async Task<Result<Post>> Handle(Query request, CancellationToken cancellationToken)
             {
-                return await this.context.Posts.FindAsync(request.Id);
+                var post = await this.context.Posts.FindAsync(request.Id);
+                return Result<Post>.Success(post);
             }
         }
     }

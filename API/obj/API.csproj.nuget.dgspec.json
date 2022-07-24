@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repositories\\social-media-app\\api\\API.csproj": {}
+    "d:\\Repositories\\social-media-app\\API\\API.csproj": {}
   },
   "projects": {
-    "D:\\Repositories\\social-media-app\\api\\API.csproj": {
+    "d:\\Repositories\\social-media-app\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositories\\social-media-app\\api\\API.csproj",
+        "projectUniqueName": "d:\\Repositories\\social-media-app\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "D:\\Repositories\\social-media-app\\api\\API.csproj",
+        "projectPath": "d:\\Repositories\\social-media-app\\API\\API.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositories\\social-media-app\\api\\obj\\",
+        "outputPath": "d:\\Repositories\\social-media-app\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,15 +21,14 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Repositories\\social-media-app\\Application\\Application.csproj": {
-                "projectPath": "D:\\Repositories\\social-media-app\\Application\\Application.csproj"
+              "d:\\Repositories\\social-media-app\\Application\\Application.csproj": {
+                "projectPath": "d:\\Repositories\\social-media-app\\Application\\Application.csproj"
               },
               "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
                 "projectPath": "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj"
@@ -53,6 +52,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.1.2, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -95,14 +98,14 @@
         }
       }
     },
-    "D:\\Repositories\\social-media-app\\Application\\Application.csproj": {
+    "d:\\Repositories\\social-media-app\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositories\\social-media-app\\Application\\Application.csproj",
+        "projectUniqueName": "d:\\Repositories\\social-media-app\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\Repositories\\social-media-app\\Application\\Application.csproj",
+        "projectPath": "d:\\Repositories\\social-media-app\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositories\\social-media-app\\Application\\obj\\",
+        "outputPath": "d:\\Repositories\\social-media-app\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -141,6 +144,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.1.2, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",

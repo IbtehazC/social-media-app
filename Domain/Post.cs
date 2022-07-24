@@ -1,4 +1,6 @@
-﻿namespace Domain
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Domain
 {
     public class Post
     {

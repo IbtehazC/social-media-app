@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "hbVp3IFGeYRYsiA/ZL1tW0tF7VhykyE6DSeJ1bMqMFjRGqThOSQxTiqTxY6EIXYiBbrB5Jq2de9hj5AWgkX+9Q==",
+  "dgSpecHash": "KSDuqge26Fa8HpZEkrBNoZoCzina5LxMC6biEkjs7bhqz1i6lJmksti4K/aCQbC0CtMjwn0TYijaR51KlNyw1w==",
   "success": true,
-  "projectFilePath": "D:\\Repositories\\social-media-app\\Application\\Application.csproj",
+  "projectFilePath": "d:\\Repositories\\social-media-app\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\User\\.nuget\\packages\\automapper\\11.0.0\\automapper.11.0.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\11.0.0\\automapper.extensions.microsoft.dependencyinjection.11.0.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\fluentvalidation\\11.1.0\\fluentvalidation.11.1.0.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\fluentvalidation.aspnetcore\\11.1.2\\fluentvalidation.aspnetcore.11.1.2.nupkg.sha512",
+    "C:\\Users\\User\\.nuget\\packages\\fluentvalidation.dependencyinjectionextensions\\11.1.0\\fluentvalidation.dependencyinjectionextensions.11.1.0.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
     "C:\\Users\\User\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",

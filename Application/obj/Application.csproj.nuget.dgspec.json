@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repositories\\social-media-app\\Application\\Application.csproj": {}
+    "d:\\Repositories\\social-media-app\\Application\\Application.csproj": {}
   },
   "projects": {
-    "D:\\Repositories\\social-media-app\\Application\\Application.csproj": {
+    "d:\\Repositories\\social-media-app\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositories\\social-media-app\\Application\\Application.csproj",
+        "projectUniqueName": "d:\\Repositories\\social-media-app\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "D:\\Repositories\\social-media-app\\Application\\Application.csproj",
+        "projectPath": "d:\\Repositories\\social-media-app\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositories\\social-media-app\\Application\\obj\\",
+        "outputPath": "d:\\Repositories\\social-media-app\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -21,18 +21,17 @@
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj"
+              "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
+                "projectPath": "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj"
               },
-              "D:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj": {
-                "projectPath": "D:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj"
+              "d:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj": {
+                "projectPath": "d:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj"
               }
             }
           }
@@ -50,6 +49,10 @@
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
               "version": "[11.0.0, )"
+            },
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.1.2, )"
             },
             "MediatR.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
@@ -75,14 +78,14 @@
         }
       }
     },
-    "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
+    "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj",
+        "projectUniqueName": "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj",
+        "projectPath": "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositories\\social-media-app\\Domain\\obj\\",
+        "outputPath": "d:\\Repositories\\social-media-app\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -129,14 +132,14 @@
         }
       }
     },
-    "D:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj": {
+    "d:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj",
+        "projectUniqueName": "d:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj",
         "projectName": "Persistance",
-        "projectPath": "D:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj",
+        "projectPath": "d:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositories\\social-media-app\\Persistance\\obj\\",
+        "outputPath": "d:\\Repositories\\social-media-app\\Persistance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -153,8 +156,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj"
+              "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
+                "projectPath": "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj"
               }
             }
           }
