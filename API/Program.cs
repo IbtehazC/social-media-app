@@ -6,15 +6,27 @@ using AutoMapper;
 using Application.Core;
 using FluentValidation.AspNetCore;
 using API.middleware;
+using Domain;
+using Microsoft.AspNetCore.Identity;
+using API.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc.Authorization;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers().AddFluentValidation(config =>
+builder.Services.AddControllers(options =>
 {
-    config.RegisterValidatorsFromAssemblyContaining<Create>();
-});
+    var policy = new AuthorizationPolicyBuilder().RequireAuthenticatedUser().Build();
+    options.Filters.Add(new AuthorizeFilter(policy));
+}).AddFluentValidation(config =>
+    {
+        config.RegisterValidatorsFromAssemblyContaining<Create>();
+    });
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -31,6 +43,25 @@ builder.Services.AddCors(options =>
 });
 builder.Services.AddMediatR(typeof(List.Handler).Assembly);
 builder.Services.AddAutoMapper(typeof(MappingProfiles).Assembly);
+builder.Services.AddIdentityCore<AppUser>(options =>
+{
+    options.Password.RequireNonAlphanumeric = false;
+}).AddEntityFrameworkStores<DataContext>().AddSignInManager<SignInManager<AppUser>>();
+
+var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["TokenKey"]));
+
+builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+    .AddJwtBearer(options =>
+    {
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuerSigningKey = true,
+            IssuerSigningKey = key,
+            ValidateIssuer = false,
+            ValidateAudience = false
+        };
+    });
+builder.Services.AddScoped<TokenService>();
 
 var app = builder.Build();
 
@@ -49,8 +80,9 @@ var services = scope.ServiceProvider;
 try
 {
     var context = services.GetRequiredService<DataContext>();
+    var userManager = services.GetRequiredService<UserManager<AppUser>>();
     await context.Database.MigrateAsync();
-    await Seed.SeedData(context);
+    await Seed.SeedData(context, userManager);
 }
 catch (Exception ex)
 {
@@ -60,6 +92,7 @@ catch (Exception ex)
 
 app.UseCors("CorsPolicy");
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

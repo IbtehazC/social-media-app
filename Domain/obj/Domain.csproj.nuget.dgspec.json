@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {}
+    "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
+    "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj",
+        "projectUniqueName": "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj",
+        "projectPath": "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositories\\social-media-app\\Domain\\obj\\",
+        "outputPath": "d:\\Repositories\\social-media-app\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -39,6 +39,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

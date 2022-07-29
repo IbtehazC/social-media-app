@@ -128,3 +128,11 @@ D:\Repositories\social-media-app\api\obj\Debug\net6.0\refint\API.dll
 D:\Repositories\social-media-app\api\obj\Debug\net6.0\API.pdb
 D:\Repositories\social-media-app\api\obj\Debug\net6.0\API.genruntimeconfig.cache
 D:\Repositories\social-media-app\api\obj\Debug\net6.0\ref\API.dll
+D:\Repositories\social-media-app\api\bin\Debug\net6.0\FluentValidation.dll
+D:\Repositories\social-media-app\api\bin\Debug\net6.0\FluentValidation.AspNetCore.dll
+D:\Repositories\social-media-app\api\bin\Debug\net6.0\FluentValidation.DependencyInjectionExtensions.dll
+D:\Repositories\social-media-app\api\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+D:\Repositories\social-media-app\api\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+D:\Repositories\social-media-app\api\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\Repositories\social-media-app\api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+D:\Repositories\social-media-app\api\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll

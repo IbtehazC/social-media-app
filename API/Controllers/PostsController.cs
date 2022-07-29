@@ -1,9 +1,7 @@
 using Application.Posts;
 using Domain;
-using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using Persistance;
 
 namespace API.Controllers
 {
@@ -15,6 +13,7 @@ namespace API.Controllers
             return HandleResult(await this.Mediator.Send(new List.Query()));
         }
 
+        [Authorize]
         [HttpGet("{id}")]
         public async Task<IActionResult> GetPost(Guid id)
         {

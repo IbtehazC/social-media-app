@@ -30,11 +30,11 @@
               "d:\\Repositories\\social-media-app\\Application\\Application.csproj": {
                 "projectPath": "d:\\Repositories\\social-media-app\\Application\\Application.csproj"
               },
-              "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj"
+              "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
+                "projectPath": "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj"
               },
-              "D:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj": {
-                "projectPath": "D:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj"
+              "d:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj": {
+                "projectPath": "d:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj"
               }
             }
           }
@@ -61,6 +61,14 @@
               "target": "Package",
               "version": "[10.0.1, )"
             },
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -71,9 +79,17 @@
               "target": "Package",
               "version": "[6.0.6, )"
             },
+            "Microsoft.IdentityModel.Tokens": {
+              "target": "Package",
+              "version": "[6.22.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[6.22.0, )"
             }
           },
           "imports": [
@@ -122,11 +138,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj"
+              "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
+                "projectPath": "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj"
               },
-              "D:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj": {
-                "projectPath": "D:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj"
+              "d:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj": {
+                "projectPath": "d:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj"
               }
             }
           }
@@ -173,14 +189,14 @@
         }
       }
     },
-    "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
+    "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj",
+        "projectUniqueName": "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj",
+        "projectPath": "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositories\\social-media-app\\Domain\\obj\\",
+        "outputPath": "d:\\Repositories\\social-media-app\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -208,6 +224,12 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -227,14 +249,14 @@
         }
       }
     },
-    "D:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj": {
+    "d:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj",
+        "projectUniqueName": "d:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj",
         "projectName": "Persistance",
-        "projectPath": "D:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj",
+        "projectPath": "d:\\Repositories\\social-media-app\\Persistance\\Persistance.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "D:\\Repositories\\social-media-app\\Persistance\\obj\\",
+        "outputPath": "d:\\Repositories\\social-media-app\\Persistance\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -251,8 +273,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
-                "projectPath": "D:\\Repositories\\social-media-app\\Domain\\Domain.csproj"
+              "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj": {
+                "projectPath": "d:\\Repositories\\social-media-app\\Domain\\Domain.csproj"
               }
             }
           }
@@ -267,9 +289,13 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[6.0.6, )"
+              "version": "[6.0.7, )"
             },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",

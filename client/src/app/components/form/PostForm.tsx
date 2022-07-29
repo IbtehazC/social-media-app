@@ -87,6 +87,7 @@ export default observer(function PostForm() {
               bg={"#e7e7e7"}
               value={post.heading}
               onChange={handleFormInputChange}
+              isRequired={true}
             />
           </FormControl>
           <FormControl id="description" isRequired>
@@ -97,6 +98,7 @@ export default observer(function PostForm() {
               bg={"#e7e7e7"}
               value={post.description}
               onChange={handleFormInputChange}
+              isRequired={true}
             />
           </FormControl>
           <FormControl id="createdAt" isRequired>
