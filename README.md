@@ -1,7 +1,6 @@
-# Social Media App
+# Social Media Api
 
 ### Tech stack
-- ReactJs as front-end
 - ASP.NET as a server language
 - SQLite to serve locally
 
