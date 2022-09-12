@@ -1,4 +1,4 @@
-# Social Media APp
+# Social Media App
 
 ### Tech stack
 - ReactJs as front-end
