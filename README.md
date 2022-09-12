@@ -5,7 +5,7 @@
 - SQLite to serve locally
 
 ### TODO -
-- Deploy App
+- Deploy App to a cloud server
 
 ### How to run app
 - clone/fork repository in your local computer
